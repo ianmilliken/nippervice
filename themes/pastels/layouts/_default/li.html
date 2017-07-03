@@ -1,0 +1,24 @@
+<li class="portfolio-item">
+	<div class="portfolio-image">
+		<img class="portfolio-image__item" src="{{ .Params.image }}" alt="" />
+	</div>
+	<h2 class="portfolio-item__title">{{ .Title }}</h2>
+	<p class="portfolio-item__description">
+		{{ .Params.description }}
+	</p>
+	<ul class="portfolio-links">
+		{{ range .Params.links }}
+			<li class="portfolio-links__item">
+				{{ .type }}: <a href="{{ .url | relLangURL }}" target="_blank">{{ .title }}</a>
+			</li>
+		{{ end }}
+	</ul>
+	<div>
+		<h4>Services</h4>
+		<ul class="portfolio-services">
+			{{ range .Params.services }}
+    		<li class="portfolio-services__item"><img src="{{ .icon }}" alt="{{ .type }}" />{{ .type }}</li>
+  		{{ end }}
+		</ul>
+	</div>
+</li>

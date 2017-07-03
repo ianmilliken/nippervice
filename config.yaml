@@ -1,0 +1,17 @@
+---
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Clare Evans"
+indexTitle: "Hi!"
+
+menu:
+  main:
+    - Name: "About"
+      URL: "/about/"
+    - Name: "Portfolio"
+      URL: "/portfolio/"
+
+taxonomies:
+  service: "services"
+
+---

@@ -1,0 +1,21 @@
+<header>
+
+  {{ if .Site.Menus.main }}
+  <nav class="site-nav">
+    <ul>
+      <li class="site-nav__logo">
+        <a href="/">Clare Evans</a>
+      </li>
+    </ul>
+    <ul>
+      {{ range .Site.Menus.main }}
+      {{ $currentNode := . }}
+      <li class="site-nav__item">
+        <a class="site-nav__link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+  {{ end }}
+
+</header>
