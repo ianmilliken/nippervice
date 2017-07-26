@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{ $baseURL := .Site.BaseURL }}
+
+<section class="page-section">
+	<h1><span>{{ .Title }}</span></h1>
+	{{ .Content }}
+</section>
+
+<section class="page-section" id="skills">
+  <h2><span>Services</span></h2>
+  <ul class="skill-list">
+    {{ range .Params.skills }}
+    <li class="skill-item">
+      <img class="skill-item__icon" src="{{ .Icon }}" alt="{{ .Type }}" />
+      <div class="skill-item__title">{{ .Type }}</div>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="page-section" id="resume">
+  <h2><span>Resume</span></h2>
+  <ul class="resume-list">
+    {{ range .Params.resume }}
+    <li class="resume-item">
+      <h3 class="resume-item__title">{{ .Name }}</h3>
+      <div class="resume-item__date"><span><img src="/images/date.png" /></span>{{ .DateFrom }} – {{ .DateTo }}</div>
+      <p class="resume-item__summary">
+        {{ .Summary }}
+      </p>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="page-section" id="education">
+  <h2><span>Education</span></h2>
+  <ul class="resume-list">
+    {{ range .Params.education }}
+    <li class="resume-item">
+      <h3 class="resume-item__title">{{ .Name }}</h3>
+      <div class="resume-item__date"><span><img src="/images/date.png" /></span>{{ .DateFrom }} – {{ .DateTo }}</div>
+      <p class="resume-item__summary">
+        {{ .Summary }}
+      </p>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ end }}

@@ -11,7 +11,7 @@
       {{ range .Site.Menus.main }}
       {{ $currentNode := . }}
       <li class="site-nav__item">
-        <a class="site-nav__link" href="{{ .URL }}">{{ .Name }}</a>
+        <a class="site-nav__link" href="{{ $currentNode.URL }}">{{ $currentNode.Name }}</a>
       </li>
       {{ end }}
     </ul>
