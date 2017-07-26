@@ -1,4 +1,9 @@
-/* X SMALL */
+/*
+ *
+ * static/css/skills
+ *
+ */
+
 @media (min-width: 320px) {
   .skill-list {
     display: flex;
@@ -26,7 +31,7 @@
   }
 }
 
-/* SMALL */
+
 @media (min-width: 480px) {
   .skill-item {
     text-align: center;
@@ -43,7 +48,7 @@
   }
 }
 
-/* MEDIUM */
+
 @media (min-width: 768px) {
   .skill-item {
     text-align: center;
@@ -56,11 +61,7 @@
 }
 
 /* LARGE */
-@media (min-width: 992px) {
-
-}
+@media (min-width: 992px) {}
 
 /* X LARGE */
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
