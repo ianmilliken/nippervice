@@ -1,0 +1,40 @@
+.resume-list {
+  border: 2px solid #FFD2D4;
+  margin-top: -26px;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 1px dotted #FFD2D4;
+}
+
+.resume-item__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.resume-item__date {
+  font-size: 13px;
+  font-style: oblique;
+}
+
+.resume-item__date > span {
+  margin-right: 6px;
+}
+
+.resume-item__summary {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.resume-item__summary:last-of-type {
+  margin-bottom: 0;
+}
