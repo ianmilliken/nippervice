@@ -1,6 +1,10 @@
 # Directories
 /public
 
+# Mac
+.DS_Store
+.ds_store
+
 # Logs
 logs
 *.log

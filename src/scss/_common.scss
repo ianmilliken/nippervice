@@ -1,0 +1,21 @@
+@import "settings";
+
+html {
+  font-size: $html_font_size;
+  -webkit-font-smoothing: $font_smoothing;
+  -webkit-font-rendering: $font_rendering;
+}
+
+body {
+  font-family: $sans_font;
+  font-size: $body_font_size;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: $serif_font;
+}

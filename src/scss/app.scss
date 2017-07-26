@@ -1,1 +1,12 @@
-//working!
+//@import "settings";
+//@import "common";
+
+@import "vendor/normalize";
+
+@import "legacy/main";
+@import "legacy/page";
+@import "legacy/site_nav";
+@import "legacy/site_footer";
+@import "legacy/portfolio";
+@import "legacy/resume";
+@import "legacy/skills";
