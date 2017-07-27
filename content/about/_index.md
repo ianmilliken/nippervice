@@ -4,28 +4,14 @@ title: "About"
 date: 2017-07-03T14:49:47+10:00
 draft: false
 
-skills:
-  - Type: "Digital marketing strategy"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "Content marketing"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "Social media marketing"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "Marketing reports"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "Ghost writing"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "PR and promotional campaigns"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
-  - Type: "Paid advertising"
-    Icon: "/images/services/ghost_writing_fs.png"
-    IconSmall: "/images/services/ghost_writing.png"
+skills: [
+  DM,
+  SM,
+  MR,
+  GW,
+  PR,
+  PA
+]
 
 resume:
   - Name: Freelance Digital Marketer
