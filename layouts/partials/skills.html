@@ -8,19 +8,20 @@
     <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "social-media-marketing.png" }}" alt="Content marketing" />
     <div class="skill-item__title">Content marketing</div>
     {{ else if eq . "SM" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "social-media-marketing.png" }}" alt="Social media marketing" />
+    <!--img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "social-media-marketing.png" }}" alt="Social media marketing" /-->
+    {{ partial "components/social_media_marketing.svg" . }}
     <div class="skill-item__title">Social media marketing</div>
     {{ else if eq . "MR" }}
     <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Marketing reports" />
     <div class="skill-item__title">Marketing reports</div>
     {{ else if eq . "GW" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Ghost writing" />
+    {{ partial "components/ghost_writing.svg" . }}
     <div class="skill-item__title">Ghost writing</div>
     {{ else if eq . "PR" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "pr-promotional.png" }}" alt="PR and promotional campaigns" />
+    {{ partial "components/pr_promotional.svg" . }}
     <div class="skill-item__title">PR and promotional campaigns</div>
     {{ else if eq . "PA" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "paid-advertising.png" }}" alt="Paid advertising" />
+    {{ partial "components/paid_advertising.svg" . }}
     <div class="skill-item__title">Paid advertising</div>
     {{ end }}
   </li>
