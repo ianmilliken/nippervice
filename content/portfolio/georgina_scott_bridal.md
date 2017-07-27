@@ -2,7 +2,7 @@
 # portfolio/blue_horizons.md
 title: "Georgina Scott Bridal"
 date: 2017-07-03T14:49:47+10:00
-draft: true
+draft: false
 
 image: "/images/georgina-scott-bridal.png"
 description: "Devised a digital marketing strategy for a bridal retailer client and coordinated content, social media marketing and PR."

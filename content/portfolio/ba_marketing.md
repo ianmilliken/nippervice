@@ -2,7 +2,7 @@
 # portfolio/ba_marketing.md
 title: "BA Marketing"
 date: 2017-07-03T14:49:47+10:00
-draft: true
+draft: false
 
 image: "/images/ba-marketing.png"
 description: "Formulated an SEO eBook as a downloadable promotional material.
