@@ -6,7 +6,7 @@
     </div>
     <div class="split-section__piece">
       <h1><span>{{ .Params.page_title }}</span></h1>
-      {{ .Content }}
+      <p>{{ .Params.page_intro }}</p>
       {{ range .Params.cta }}
         <a class="button" href="{{ .Link }}">
           <svg width="221px" height="56px" viewBox="0 0 221 56">
@@ -19,6 +19,7 @@
           <span>{{ .Title }}</span>
         </a>
       {{ end }}
+      {{ .Content }}
     </div>
   </section>
 
