@@ -5,9 +5,8 @@ date: 2017-07-03T14:49:47+10:00
 draft: false
 
 page_title: "Hi!"
-page_image: "/images/clare-evans.jpg"
 cta:
-  - Title: "Check out my work!"
+  - Title: "Check out my work"
     Link: "/portfolio/"
 ---
 

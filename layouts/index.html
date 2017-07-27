@@ -2,7 +2,7 @@
 
   <section class="page-section split-section">
     <div class="split-section__piece split-section__piece--banner">
-      <img src="{{ .Params.page_image }}" alt="{{ .Title }}" />
+      <img src="/images/{{ index .Site.Data.images.hash "clare-evans-home.jpg" }}" alt="{{ .Title }}" />
     </div>
     <div class="split-section__piece">
       <h1><span>{{ .Params.page_title }}</span></h1>
