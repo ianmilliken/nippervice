@@ -2,17 +2,17 @@
   {{ range .Params.skills }}
   <li class="skill-item">
     {{ if eq . "DM" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Digital marketing strategy" />
+    {{ partial "components/digital_marketing.svg" . }}
     <div class="skill-item__title">Digital marketing strategy</div>
     {{ else if eq . "CM" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "social-media-marketing.png" }}" alt="Content marketing" />
+    {{ partial "components/content_marketing.svg" . }}
     <div class="skill-item__title">Content marketing</div>
     {{ else if eq . "SM" }}
     <!--img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "social-media-marketing.png" }}" alt="Social media marketing" /-->
     {{ partial "components/social_media_marketing.svg" . }}
     <div class="skill-item__title">Social media marketing</div>
     {{ else if eq . "MR" }}
-    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Marketing reports" />
+    {{ partial "components/marketing_reports.svg" . }}
     <div class="skill-item__title">Marketing reports</div>
     {{ else if eq . "GW" }}
     {{ partial "components/ghost_writing.svg" . }}
