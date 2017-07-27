@@ -6,6 +6,7 @@ draft: false
 
 skills: [
   DM,
+  CM,
   SM,
   MR,
   GW,

@@ -4,6 +4,9 @@
     {{ if eq . "DM" }}
     <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Digital marketing strategy" />
     <div class="skill-item__title">Digital marketing strategy</div>
+    {{ else if eq . "CM" }}
+    <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Social media marketing" />
+    <div class="skill-item__title">Content marketing</div>
     {{ else if eq . "SM" }}
     <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Social media marketing" />
     <div class="skill-item__title">Social media marketing</div>
