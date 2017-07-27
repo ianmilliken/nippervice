@@ -9,31 +9,7 @@
 
 <section class="page-section" id="skills">
   <h2><span>Services</span></h2>
-  <ul class="skill-list">
-    {{ range .Params.skills }}
-    <li class="skill-item">
-      {{ if eq . "DM" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Digital marketing strategy" />
-      <div class="skill-item__title">Digital marketing strategy</div>
-      {{ else if eq . "SM" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Social media marketing" />
-      <div class="skill-item__title">Social media marketing</div>
-      {{ else if eq . "MR" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Marketing reports" />
-      <div class="skill-item__title">Marketing reports</div>
-      {{ else if eq . "GW" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Ghost writing" />
-      <div class="skill-item__title">Ghost writing</div>
-      {{ else if eq . "PR" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="PR and promotional campaigns" />
-      <div class="skill-item__title">PR and promotional campaigns</div>
-      {{ else if eq . "PA" }}
-      <img class="skill-item__icon" src="/images/{{ index $.Site.Data.images.hash "ghost-writing.png" }}" alt="Paid advertising" />
-      <div class="skill-item__title">Paid advertising</div>
-      {{ end }}
-    </li>
-    {{ end }}
-  </ul>
+  {{ partial "skills.html" . }}
 </section>
 
 <section class="page-section" id="resume">
