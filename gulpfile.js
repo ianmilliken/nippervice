@@ -5,6 +5,7 @@ var gulp         = require("gulp"),
     copy         = require("gulp-copy"),
     notify       = require("gulp-notify"),
     bower        = require("gulp-bower"),
+    jquery       = require('gulp-jquery'),
     del          = require("del"),
 
     config = {

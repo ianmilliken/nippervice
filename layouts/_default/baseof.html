@@ -10,6 +10,7 @@
     </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,400i,600,700,800|Yellowtail">
     <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "app.css" }}" as="style" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Code that all your templates share, like a header -->
@@ -23,5 +24,26 @@
 
     <!-- More shared code, perhaps a footer -->
     {{ partial "footer.html" . }}
+
+    <div class="site-overlay"></div>
+
+    <div class="site-drawer">
+      <a class="site-drawer__close" href="#"><i class="fa fa-times"></i></a>
+      <ul class="site-drawer__list">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+        <li class="site-drawer__item">
+          <a class="site-drawer__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}site-drawer__link--active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        <li class="site-drawer__item">
+          <a class="site-drawer__link" href="https://www.linkedin.com/in/clarejaneevans/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <script defer src="/js/{{ index .Site.Data.js.hash "app.js" }}"></script>
   </body>
 </html>
