@@ -1,1 +1,17 @@
-<h2><span>{{ .Get "text" }}</span></h2>
+{{ if .IsNamedParams }}
+
+  {{ if .Get "text" }}
+    <h2><span>{{ .Get "text" }}</span></h2>
+  {{ else }}
+    <div class="error">You forgot to enter text!</div>
+  {{ end }}
+
+{{ else }}
+
+  {{ if len .Params }}
+    <h2><span>{{ .Get 0 }}</span></h2>
+  {{ else }}
+    <div class="error">You forgot to enter text!</div>
+  {{ end }}
+
+{{ end }}
