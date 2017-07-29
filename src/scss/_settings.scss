@@ -1,12 +1,73 @@
-// 1. Typography
+/*
+ *
+ *  SASS Settings "_settings.scss"
+ *  author: ianmilliken
+ *
+ */
 
-$html_font_size: 62.5%;
-$body_font_size: 1.6rem;
-$serif_font: 'Merriweather', serif;
-$sans_font: 'Open Sans', sans-serif;
-$cursive_font: 'Kalam', cursive;
-$header_lineheight: 1.4;
+//  -----------------------------
+//  1. Typography
+//  -----------------------------
+
+$html_font_size:       62.5%;
+$body_font_size:       1.6rem;
+$logo_font:            'Yellowtail', cursive;
+$sans_font:            'Open Sans', sans-serif;
+$cursive_font:         'Courgette', cursive;
+$header_lineheight:    1.4;
 $paragraph_lineheight: 1.6;
+$font_smoothing:       antialiased;
+$font-rendering:       optimizeLegibility;
 
-$font_smoothing: antialiased;
-$font-rendering: optimizeLegibility;
+//  -----------------------------
+//  2. Colors
+//  -----------------------------
+
+$brand_pink:        #FFB6B9;
+$brand_light_pink:  #FFD2D4;
+$brand_green:       #72DF9F;
+$brand_light_green: #97FFC2;
+$brand_blue:        #4C5966;
+$black:             #000000;
+$grey:              #EDEDED;
+$white:             #FEFEFE;
+
+//  -----------------------------
+//  3. Breakpoints
+//  -----------------------------
+
+$x_small_width: 320px;
+$small_width:   480px;
+$medium_width:  768px;
+$large_width:   992px;
+$x_large_width: 1200px;
+
+@mixin bp-x-small {
+  @media (min-width: #{$x_small_width}) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media (min-width: #{$small_width}) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media (min-width: #{$medium_width}) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media (min-width: #{$large_width}) {
+    @content;
+  }
+}
+
+@mixin bp-x-large {
+  @media (min-width: #{$x_large_width}) {
+    @content;
+  }
+}
