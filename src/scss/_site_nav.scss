@@ -46,6 +46,11 @@
   .site-nav__item {
     display: inline-block;
 
+    &--pipe {
+      border-left: 0.1rem solid darken($off_white, 5%);
+      padding-left: 1rem;
+    }
+
     & > a {
       padding-left: 1rem;
       padding-right: 1rem;
