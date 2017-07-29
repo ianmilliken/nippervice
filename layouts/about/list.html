@@ -18,7 +18,10 @@
     {{ range .Params.resume }}
     <li class="resume-item">
       <h3 class="resume-item__title">{{ .Name }}</h3>
-      <div class="resume-item__date"><span><img src="/images/date.png" /></span>{{ .DateFrom }} – {{ .DateTo }}</div>
+      <div class="resume-item__date">
+        <span><i class="fa fa-calendar"></i></span>
+        {{ .DateFrom }} – {{ .DateTo }}
+      </div>
       <p class="resume-item__summary">
         {{ .Summary }}
       </p>
@@ -33,7 +36,10 @@
     {{ range .Params.education }}
     <li class="resume-item">
       <h3 class="resume-item__title">{{ .Name }}</h3>
-      <div class="resume-item__date"><span><img src="/images/date.png" /></span>{{ .DateFrom }} – {{ .DateTo }}</div>
+      <div class="resume-item__date">
+        <span><i class="fa fa-calendar"></i></span>
+        {{ .DateFrom }} – {{ .DateTo }}
+      </div>
       <p class="resume-item__summary">
         {{ .Summary }}
       </p>

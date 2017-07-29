@@ -2,8 +2,29 @@ var gulp         = require("gulp"),
     sass         = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     hash         = require("gulp-hash"),
-    del          = require("del")
+    copy         = require("gulp-copy"),
+    notify       = require("gulp-notify"),
+    bower        = require("gulp-bower"),
+    del          = require("del"),
 
+    config = {
+         SASS_DIR: './src/scss',
+        JS_DIR: './src/js',
+        IMAGE_DIR: './src/images',
+         BOWER_DIR: './bower_components' 
+    }
+
+// Run Bower Install
+gulp.task("bower", function() { 
+    return bower()
+        .pipe(gulp.dest(config.BOWER_DIR)) 
+});
+
+// Move FontAwesome into our SCSS
+gulp.task("icons", function() { 
+    return gulp.src(config.BOWER_DIR + '/font-awesome/fonts/**.*') 
+        .pipe(gulp.dest('./static/fonts')); 
+});
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
@@ -12,9 +33,16 @@ gulp.task("scss", function () {
     del(["static/css/**/*"])
 
     //compile hashed css files
-    gulp.src("src/scss/**/*.scss")
+    gulp.src(config.SASS_DIR + "/**/*.scss")
         .pipe(sass({
-            outputStyle : "compressed"
+            outputStyle : "compressed",
+            includePaths: [
+                config.SASS_DIR,
+                config.BOWER_DIR + '/font-awesome/scss'
+            ]
+        }))
+        .on("error", notify.onError(function (error) {
+            return "Error: " + error.message;
         }))
         .pipe(autoprefixer({
             browsers : ["last 20 versions"]
@@ -30,7 +58,7 @@ gulp.task("scss", function () {
 // Hash images
 gulp.task("images", function () {
     del(["static/images/**/*"])
-    gulp.src("src/images/**/*")
+    gulp.src(config.IMAGE_DIR + "/**/*")
         .pipe(hash())
         .pipe(gulp.dest("static/images"))
         .pipe(hash.manifest("hash.json"))
@@ -40,7 +68,7 @@ gulp.task("images", function () {
 // Hash javascript
 gulp.task("js", function () {
     del(["static/js/**/*"])
-    gulp.src("src/js/**/*")
+    gulp.src(config.JS_DIR + "/**/*")
         .pipe(hash())
         .pipe(gulp.dest("static/js"))
         .pipe(hash.manifest("hash.json"))
@@ -49,11 +77,11 @@ gulp.task("js", function () {
 
 // Watch asset folder for changes
 gulp.task("watch", ["scss", "images", "js"], function () {
-    gulp.watch("src/scss/**/*", ["scss"])
-    gulp.watch("src/images/**/*", ["images"])
-    gulp.watch("src/js/**/*", ["js"])
+    gulp.watch(config.SASS_DIR + "/**/*", ["scss"])
+    gulp.watch(config.IMAGE_DIR + "/**/*", ["images"])
+    gulp.watch(config.JS_DIR + "/**/*", ["js"])
 })
 
 
 // Set watch as default task
-gulp.task("default", ["watch"])
+gulp.task("default", ["bower", "icons", "watch"])
