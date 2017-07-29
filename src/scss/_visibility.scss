@@ -1,0 +1,56 @@
+/*
+ *
+ *  Styles for visibility based on media queries "_visibility.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .show-on-small {
+    display: inherit;
+    visibility: inherit;
+  }
+
+  .show-on-medium {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+
+@include bp-small {
+
+
+
+}
+
+
+@include bp-medium {
+
+  .show-on-small {
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-on-medium {
+    display: inherit;
+    visibility: inherit;
+  }
+
+}
+
+
+@include bp-large {
+
+
+
+}
+
+
+@include bp-x-large {
+
+
+
+}

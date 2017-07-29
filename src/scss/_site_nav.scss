@@ -12,8 +12,8 @@
     justify-content: space-between;
     align-items: center;
     height: 5.4rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 
     &__list {
       margin: 0;
@@ -60,6 +60,15 @@
         text-decoration: none;
       }
     }
+  }
+
+}
+
+@include bp-medium {
+
+  .site-nav {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
 }

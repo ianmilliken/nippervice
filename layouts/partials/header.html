@@ -7,7 +7,7 @@
         <a href="/">Clare Evans</a>
       </li>
     </ul>
-    <ul class="site-nav__list">
+    <ul class="site-nav__list show-on-medium">
       {{ $currentNode := . }}
       {{ range .Site.Menus.main }}
       <li class="site-nav__item">
@@ -16,6 +16,11 @@
       {{ end }}
       <li class="site-nav__item site-nav__item--pipe">
         <a class="site-nav__link" href="https://www.linkedin.com/in/clarejaneevans/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <ul class="site-nav__list show-on-small">
+      <li class="site-nav__item site-nav__item--pipe">
+        <a class="site-nav__link" href="#"><i class="fa fa-bars"></i></a>
       </li>
     </ul>
   </nav>
