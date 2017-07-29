@@ -7,6 +7,22 @@
 
 @include bp-x-small {
 
+  .site-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 5.4rem;
+    background-color: $off_white;
+  }
+
+  .site-nav-wrapper {
+    max-width: 104rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .site-nav {
     display: flex;
     justify-content: space-between;
