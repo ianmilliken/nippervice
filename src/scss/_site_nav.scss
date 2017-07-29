@@ -8,55 +8,57 @@
 @include bp-x-small {
 
   .site-nav {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
-  .site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5.4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 
-    & > ul {
+    &__list {
       margin: 0;
       padding: 0;
       list-style: none;
+    }
 
-      & > li > a {
-        display: block;
-        height: 5.4rem;
-        line-height: 5.4rem;
-        text-decoration: none;
-        transition: color 0.2s ease;
+    &__item {
+      display: inline-block;
 
-        &:hover {
-          color: $brand_light_green;
-        }
+      &--pipe {
+        border-left: 0.1rem solid darken($off_white, 5%);
+        padding-left: 1rem;
       }
     }
-  }
 
-  .site-nav__logo > a {
-    font-family: $logo_font;
-    font-size: 2.4rem;
-    color: $brand_blue;
-  }
-
-  .site-nav__item {
-    display: inline-block;
-
-    &--pipe {
-      border-left: 0.1rem solid darken($off_white, 5%);
-      padding-left: 1rem;
-    }
-
-    & > a {
+    &__link {
+      display: block;
+      height: 5.4rem;
       padding-left: 1rem;
       padding-right: 1rem;
       font-size: 1.4rem;
       font-weight: 600;
+      line-height: 5.4rem;
+      text-decoration: none;
       color: lighten($brand_blue, 0.5);
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $brand_light_green;
+      }
+
+      &--active {
+        box-shadow: 0 0.2rem $brand_light_green;
+      }
+    }
+
+    &__logo {
+
+      & > a {
+        font-family: $logo_font;
+        font-size: 2.4rem;
+        color: $brand_blue;
+        text-decoration: none;
+      }
     }
   }
 

@@ -2,16 +2,16 @@
 
   {{ if .Site.Menus.main }}
   <nav class="site-nav">
-    <ul>
+    <ul class="site-nav__list">
       <li class="site-nav__logo">
         <a href="/">Clare Evans</a>
       </li>
     </ul>
-    <ul>
-      {{ range .Site.Menus.main }}
+    <ul class="site-nav__list">
       {{ $currentNode := . }}
+      {{ range .Site.Menus.main }}
       <li class="site-nav__item">
-        <a class="site-nav__link" href="{{ $currentNode.URL }}">{{ $currentNode.Name }}</a>
+        <a class="site-nav__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}site-nav__link--active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
       <li class="site-nav__item site-nav__item--pipe">
