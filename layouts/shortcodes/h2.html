@@ -13,8 +13,8 @@
 
 {{ else }}
 
-  {{ if len .Params }}
-    <h2><span>{{ .Get 0 }}</span></h2>
+  {{ if .Get 0 }}
+    <h1><span>{{ .Get 0 }}</span></h1>
   {{ else }}
     <div class="error">
       <p class="error__message">
