@@ -1,4 +1,15 @@
+/*
+ *
+ *  Manifest "app.js"
+ *  author: ianmilliken
+ *
+ */
+
 $(document).ready(function() {
+
+  //  -----------------------------
+  //  Hamburger and drawer
+  //  -----------------------------
 
   var add_classes, close, drawer, hamburger, overlay, remove_classes;
 

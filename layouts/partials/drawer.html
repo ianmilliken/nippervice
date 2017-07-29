@@ -1,0 +1,15 @@
+<div class="site-overlay"></div>
+<div class="site-drawer">
+  <a class="site-drawer__close" href="#"><i class="fa fa-times"></i></a>
+  <ul class="site-drawer__list">
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
+    <li class="site-drawer__item">
+      <a class="site-drawer__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}site-drawer__link--active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    <li class="site-drawer__item">
+      <a class="site-drawer__link" href="https://www.linkedin.com/in/clarejaneevans/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </li>
+  </ul>
+</div>
