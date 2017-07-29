@@ -3,15 +3,15 @@
 {{ $baseURL := .Site.BaseURL }}
 
 <section class="page-section">
-	<h1><span>{{ .Title }}</span></h1>
-	<p class="page-intro">
-		{{ .Params.intro }}
-	</p>
+
+	{{ .Content }}
+
 	<ul class="portfolio-list">
 		{{ range .Data.Pages }}
 			{{ .Render "li" }}
 		{{ end }}
 	</ul>
+	
 </section>
 
 {{ end }}
