@@ -69,10 +69,9 @@
   .page-section > p.page-intro {
     color: $brand_blue;
     font-size: 1.6rem;
-    line-height: 2.5rem;
-    text-align: center;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    line-height: 1.48;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .page-section > p > a {
@@ -128,6 +127,19 @@
 }
 
 
+@include bp-small {
+
+  .page-section > p,
+  .page-section > p.page-intro {
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+}
+
+
 @include bp-medium {
 
   .page-section > h1 {
@@ -148,8 +160,10 @@
 
   .page-section > p,
   .page-section > p.page-intro {
+    max-width: 100%;
     font-size: 1.9rem;
-    line-height: 3rem;
+    line-height: 1.6;
+    text-align: center;
   }
 
   .split-section__piece {
@@ -166,7 +180,7 @@
 
   .split-section__piece > p {
     font-size: 1.7rem;
-    line-height: 3rem;
+    line-height: 1.6;
   }
 
 }

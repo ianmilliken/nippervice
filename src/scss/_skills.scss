@@ -18,10 +18,12 @@
   }
 
   .skill-item {
-    width: 100%;
+    width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: center;
 
-    &:not(:first-of-type) {
+    &:nth-child(n+3) {
       margin-top: 3rem;
     }
 
@@ -40,8 +42,8 @@
     width: 33.33%;
     text-align: center;
 
-    /* RESET */
-    &:not(:first-of-type) {
+    // Reset NTH value
+    &:nth-child(n+3) {
       margin-top: 0;
     }
 
@@ -57,6 +59,11 @@
 
   .skill-item {
     width: 25%;
+
+    // Reset NTH value
+    &:nth-child(n+4) {
+      margin-top: 0;
+    }
 
     &:nth-child(n+5) {
       margin-top: 3rem;
