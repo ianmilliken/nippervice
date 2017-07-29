@@ -1,0 +1,51 @@
+/*
+ *
+ *  Styles for resume list and items "_resume.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .resume-list {
+    border: 0.2rem solid $brand_light_pink;
+    margin-top: -2.6rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .resume-item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-bottom: 0.1rem dotted $brand_light_pink;
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    &__date {
+      font-size: 1.3rem;
+      font-style: oblique;
+
+      & > span {
+        margin-right: 0.6rem;
+      }
+    }
+
+    &__summary {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+}

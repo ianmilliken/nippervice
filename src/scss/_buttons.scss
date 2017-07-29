@@ -1,0 +1,36 @@
+/*
+ *
+ *  Styles for buttons and anchors "_buttons.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .button {
+    position: relative;
+    display: block;
+    width: 22rem;
+    height: 5.6rem;
+    margin: 4rem auto;
+    color: $brand_blue;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    & > span,
+    & > svg {
+      position: absolute;
+      left: 0;
+    }
+
+    & > span {
+      width: 100%;
+      top: 1.5rem;
+    }
+  }
+
+}

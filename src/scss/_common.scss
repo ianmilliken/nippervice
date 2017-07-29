@@ -7,18 +7,42 @@
 
 @import "settings";
 
-* {
-  box-sizing: border-box;
+@include bp-x-small {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: $html_font_size;
+    -webkit-font-smoothing: $font_smoothing;
+    -webkit-font-rendering: $font_rendering;
+  }
+
+  body {
+    max-width: 110rem;
+    margin: 0 auto;
+    font-family: $sans_font;
+    font-size: $body_font_size;
+    background-color: $off_white;
+    color: $brand_blue;
+  }
+
+  .body {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    background-color: $white;
+  }
+
 }
 
-html {
-  font-size: $html_font_size;
-  -webkit-font-smoothing: $font_smoothing;
-  -webkit-font-rendering: $font_rendering;
-}
 
-body {
-  font-family: $sans_font;
-  font-size: $body_font_size;
-  margin: 0;
+@include bp-medium {
+
+  .body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
 }

@@ -1,12 +1,12 @@
 /*
  *
- * static/css/portfolio
- * --
- * Styles for porfolio page elements
+ *  Styles for portfolio list and items "_portfolio.scss"
+ *  author: ianmilliken
  *
  */
 
-@media (min-width: 320px) {
+@include bp-x-small {
+
   .portfolio-list {
     margin: 0;
     padding: 0;
@@ -14,23 +14,24 @@
   }
 
   .portfolio-item {
-    border: 2px solid #FFD2D4;
-    margin-top: 80px;
+    margin-top: 8rem;
+    border: 0.2rem solid $brand_light_pink;
   }
 
   .portfolio-item__title {
-    text-align: center;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
+    text-align: center;
   }
 
   .portfolio-item__description {
-    line-height: 25px;
-    font-size: 14px;
-    text-align: center;
-    max-width: 500px;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    text-align: center;
+
   }
 
   .portfolio-image {
@@ -38,58 +39,54 @@
   }
 
   .portfolio-image__item {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     transform: translateY(-50%);
   }
 
   .portfolio-links {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     padding: 0;
+    list-style: none;
   }
 
   .portfolio-links__item {
-    text-align: center;
-    font-size: 13px;
+    margin-bottom: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    text-align: center;
   }
 
   .portfolio-links__item > a {
-    color: #72DF9F;
-    text-decoration: none;
-    border-bottom: 1px dotted;
     font-weight: 700;
+    text-decoration: none;
+    color: $brand_green;
+    border-bottom: 0.1rem dotted;
   }
 
   .portfolio-services {
-    list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     flex-flow: row wrap;
-    max-width: 600px;
+    justify-content: center;
+    max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    padding: 0;
+    list-style: none;
   }
 
   .portfolio-services__item {
-    font-size: 13px;
-    font-weight: 600;
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
 
   .portfolio-services__item > img {
-    margin-right: 6px;
+    margin-right: 0.6rem;
   }
-}
-
-@media (min-width: 600px) {
-
 }

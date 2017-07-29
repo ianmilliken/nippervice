@@ -1,0 +1,66 @@
+/*
+ *
+ *  Styles for skill lists and items "_skills.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .skill-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .skill-item {
+    width: 100%;
+    text-align: center;
+
+    &:not(:first-of-type) {
+      margin-top: 3rem;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      color: $brand_blue;
+    }
+  }
+
+}
+
+
+@include bp-small {
+
+  .skill-item {
+    width: 33.33%;
+    text-align: center;
+
+    /* RESET */
+    &:not(:first-of-type) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n+4) {
+      margin-top: 3rem;
+    }
+  }
+
+}
+
+
+@include bp-medium {
+
+  .skill-item {
+    width: 25%;
+
+    &:nth-child(n+5) {
+      margin-top: 3rem;
+    }
+  }
+
+}

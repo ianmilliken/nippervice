@@ -1,0 +1,58 @@
+/*
+ *
+ *  Styles for site level navigation "_site_nav.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .site-nav {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.4rem;
+
+    & > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      & > li > a {
+        display: block;
+        height: 5.4rem;
+        line-height: 5.4rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $brand_light_green;
+        }
+      }
+    }
+  }
+
+  .site-nav__logo > a {
+    font-family: $logo_font;
+    font-size: 2.4rem;
+    color: $brand_blue;
+  }
+
+  .site-nav__item {
+    display: inline-block;
+
+    & > a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: lighten($brand_blue, 0.5);
+    }
+  }
+
+}
