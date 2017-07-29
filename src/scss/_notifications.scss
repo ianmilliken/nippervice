@@ -1,0 +1,27 @@
+//
+// Styles – Notifications
+//
+
+.error {
+  display: block;
+
+  &__element {
+    background-color: #B72828;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  &__message {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #FFB0B0;
+    color: #B72828;
+    border-radius: 3px;
+    border: 1px dotted;
+    padding: 10px;
+  }
+}

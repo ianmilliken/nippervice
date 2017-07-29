@@ -3,7 +3,12 @@
   {{ if .Get "text" }}
     <h1><span>{{ .Get "text" }}</span></h1>
   {{ else }}
-    <div class="error">You forgot to enter text!</div>
+    <div class="error">
+      <p class="error__message">
+        <span class="error__element">H1</span>
+        You forgot to enter text!
+      </p>
+    </div>
   {{ end }}
 
 {{ else }}
@@ -11,7 +16,12 @@
   {{ if len .Params }}
     <h1><span>{{ .Get 0 }}</span></h1>
   {{ else }}
-    <div class="error">You forgot to enter text!</div>
+    <div class="error">
+      <p class="error__message">
+        <span class="error__element">H1</span>
+        You forgot to enter text!
+      </p>
+    </div>
   {{ end }}
 
 {{ end }}
