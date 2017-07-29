@@ -1,5 +1,6 @@
 # Directories
 /public
+/static
 
 # Mac
 .DS_Store
