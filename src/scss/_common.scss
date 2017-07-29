@@ -1,4 +1,15 @@
+/*
+ *
+ *  Common styles and patterns "_common.scss"
+ *  author: ianmilliken
+ *
+ */
+
 @import "settings";
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: $html_font_size;
@@ -10,12 +21,4 @@ body {
   font-family: $sans_font;
   font-size: $body_font_size;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-p {
-  font-family: $serif_font;
 }
