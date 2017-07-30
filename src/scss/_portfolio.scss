@@ -67,11 +67,14 @@
 
   .portfolio-image {
     position: relative;
+    margin-bottom: -3rem; // pull content up to make up for child transform
 
-    &__item {
+    & > svg {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      background-color: $white;
+      box-shadow: -2rem 0 $white, 2rem 0 $white;
       transform: translateY(-50%);
     }
   }

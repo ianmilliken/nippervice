@@ -1,11 +1,22 @@
 <li class="portfolio-item">
-	<div class="portfolio-image">
-		<img class="portfolio-image__item" src="{{ .Params.image }}" alt="" />
-	</div>
+
+	{{ range .Params.image }}
+	  {{ if eq . "BA" }}
+		<div class="portfolio-image">
+			{{ partial "components/ba_marketing_logo.svg" . }}
+		</div>
+		{{ else }}
+		<div class="portfolio-image">
+			{{ partial "components/ba_marketing_logo.svg" . }}
+		</div>
+		{{ end }}
+	{{ end }}
+
 	<h2 class="portfolio-item__title">{{ .Title }}</h2>
 	<p class="portfolio-item__description">
 		{{ .Params.description }}
 	</p>
+
 	<ul class="portfolio-links">
 		{{ range .Params.links }}
 			<li class="portfolio-links__item">
@@ -13,8 +24,10 @@
 			</li>
 		{{ end }}
 	</ul>
+
 	<div>
 		<h4 class="portfolio-item__subtitle">Services</h4>
 		{{ partial "skills.html" . }}
 	</div>
+
 </li>

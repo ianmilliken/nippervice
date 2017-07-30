@@ -4,7 +4,7 @@ title: "Blue Horizons Marketing"
 date: 2017-07-03T14:49:47+10:00
 draft: false
 
-image: "/images/blue-horizons.png"
+image: [ BH ]
 description: "Specialised industry article for a UK digital marketing agency."
 
 links:

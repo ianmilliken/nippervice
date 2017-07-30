@@ -4,7 +4,7 @@ title: "BA Marketing"
 date: 2017-07-03T14:49:47+10:00
 draft: false
 
-image: "/images/ba-marketing.png"
+image: [ BA ]
 description: "Formulated an SEO eBook as a downloadable promotional material.
 Produce content marketing solution for blog, referral and social media
 platforms."
