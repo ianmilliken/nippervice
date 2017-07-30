@@ -26,20 +26,27 @@
     &__subtitle {
       margin-top: 0;
       margin-bottom: 1rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      text-align: left;
     }
 
     &__description {
-      max-width: 50rem;
+      max-width: 56rem;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 3rem;
+      padding-right: 3rem;
       font-size: 1.4rem;
-      line-height: 1.4;
-      text-align: center;
+      line-height: 1.48;
     }
 
     .skill-list {
       flex-direction: column;
+      align-items: flex-start;
       margin-bottom: 3rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     .skill-item {
@@ -49,6 +56,8 @@
       width: auto;
 
       // RESET
+      &:nth-child(n+3),
+      &:nth-child(n+4),
       &:nth-child(n+5) {
         margin-top: 0;
       }
@@ -82,14 +91,15 @@
   .portfolio-links {
     margin-top: 2rem;
     margin-bottom: 3rem;
-    padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 1.6;
     list-style: none;
 
     &__item {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1rem;
       font-size: 1.3rem;
       font-weight: 600;
-      text-align: center;
 
       & > a {
         font-weight: 700;
@@ -121,6 +131,32 @@
       &> img {
         margin-right: 0.6rem;
       }
+    }
+  }
+
+}
+
+
+@include bp-small {
+
+  .portfolio-item {
+
+    &__subtitle,
+    &__description {
+      text-align: center;
+    }
+
+    .skill-list {
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .portfolio-links {
+
+    &__item {
+      text-align: center;
     }
   }
 
