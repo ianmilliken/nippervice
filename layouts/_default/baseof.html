@@ -8,6 +8,7 @@
         {{ .Site.Title }}
       {{ end }}
     </title>
+    <link rel="shortcut icon" href="/images/{{ index .Site.Data.images.hash "favicon.png" }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,400i,600,700,800|Yellowtail">
     <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "app.css" }}" as="style" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
