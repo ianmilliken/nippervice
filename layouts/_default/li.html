@@ -20,7 +20,10 @@
 	<ul class="portfolio-links">
 		{{ range .Params.links }}
 			<li class="portfolio-links__item">
-				{{ .type }}: <a href="{{ .url | relLangURL }}" target="_blank">{{ .title }}</a>
+				{{ .type }}:
+				<a href="{{ .url | relLangURL }}" target="_blank">
+					<i class="fa fa-link"></i> {{ .title }}
+				</a>
 			</li>
 		{{ end }}
 	</ul>
