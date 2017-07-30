@@ -12,8 +12,5 @@ links:
     title: "The Key to Online Success? Create Compelling Content"
     url: "https://cdn.shopify.com/s/files/1/0671/3113/files/bh_digital_magazine_7.pdf?10522651121302583397"
 
-services:
-  - type: "Ghost Writing"
-    url: "/ghost-writing/"
-    icon: "/images/services/ghost_writing.png"
+skills: [ GW ]
 ---

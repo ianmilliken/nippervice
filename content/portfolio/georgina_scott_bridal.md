@@ -16,24 +16,5 @@ links:
     title: "What You Didn’t Know About Finding a Wedding Dress"
     url: "https://medium.com/@GeorginaScottBridal/what-you-didnt-know-about-finding-a-wedding-dress-b4fd46c85bfc"
 
-services:
-  - type: "Digital Marketing Strategy"
-    url: "/digital-marketing-strategy/"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "Content Marketing"
-    url: "/digital-marketing-strategy"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "PR & Promotional Campaigns"
-    url: "/pr-promotional-campaigns/"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "Social Media Marketing"
-    url: "/social-media-marketing/"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "Marketing Reports"
-    url: "/marketing-reports/"
-    icon: "/images/services/ghost_writing.png"
+skills: [ DM, CM, PR, SM, MR ]
 ---

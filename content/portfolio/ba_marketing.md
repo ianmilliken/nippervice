@@ -22,16 +22,5 @@ links:
     title: "The Small Business SEO Toolkit"
     url: "https://drive.google.com/drive/search?q=ebook"
 
-services:
-  - type: "Digital Marketing Strategy"
-    url: "/digital-marketing-strategy/"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "Content Marketing"
-    url: "/content-marketing"
-    icon: "/images/services/ghost_writing.png"
-
-  - type: "Social Media Marketing"
-    url: "/social-media-marketing/"
-    icon: "/images/services/ghost_writing.png"
+skills: [ DM, CM, SM ]
 ---

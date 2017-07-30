@@ -16,33 +16,64 @@
   .portfolio-item {
     margin-top: 8rem;
     border: 0.2rem solid $brand_light_pink;
-  }
 
-  .portfolio-item__title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    text-align: center;
-  }
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+    }
 
-  .portfolio-item__description {
-    max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.4rem;
-    line-height: 1.4;
-    text-align: center;
+    &__subtitle {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
 
+    &__description {
+      max-width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .skill-list {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: auto;
+
+      // RESET
+      &:nth-child(n+5) {
+        margin-top: 0;
+      }
+
+      & > svg {
+        max-width: 3rem;
+        max-height: 3rem;
+        margin-right: 0.6rem;
+      }
+
+      &__title {
+        font-size: 1.3rem;
+      }
+    }
   }
 
   .portfolio-image {
     position: relative;
-  }
 
-  .portfolio-image__item {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(-50%);
+    &__item {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transform: translateY(-50%);
+    }
   }
 
   .portfolio-links {
@@ -50,20 +81,20 @@
     margin-bottom: 3rem;
     padding: 0;
     list-style: none;
-  }
 
-  .portfolio-links__item {
-    margin-bottom: 1.6rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: center;
-  }
+    &__item {
+      margin-bottom: 1.6rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
 
-  .portfolio-links__item > a {
-    font-weight: 700;
-    text-decoration: none;
-    color: $brand_green;
-    border-bottom: 0.1rem dotted;
+      & > a {
+        font-weight: 700;
+        text-decoration: none;
+        color: $brand_green;
+        border-bottom: 0.1rem dotted;
+      }
+    }
   }
 
   .portfolio-services {
@@ -76,17 +107,18 @@
     margin-bottom: 2rem;
     padding: 0;
     list-style: none;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      &> img {
+        margin-right: 0.6rem;
+      }
+    }
   }
 
-  .portfolio-services__item {
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-
-  .portfolio-services__item > img {
-    margin-right: 0.6rem;
-  }
 }
