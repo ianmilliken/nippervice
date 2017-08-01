@@ -98,6 +98,11 @@
   .split-section__piece {
     width: 100%;
     overflow: hidden;
+
+    // MAY NEED MOVING TO COMMON
+    & > h1:first-child {
+      margin-top: 0;
+    }
   }
 
   .split-section__piece--banner {

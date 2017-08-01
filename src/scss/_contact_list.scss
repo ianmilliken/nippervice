@@ -1,0 +1,38 @@
+/*
+ *
+ *  Styles for contact list component "_contact_list.scss"
+ *  author: ianmilliken
+ *
+ */
+
+@include bp-x-small {
+
+  .contact-block {
+    text-align: center;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .contact-item {
+
+    font-size: 1.4rem;
+
+    &__link {
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      color: $brand_green;
+
+      &:hover {
+        color: darken($brand_green, 15%);
+      }
+    }
+  }
+
+}
