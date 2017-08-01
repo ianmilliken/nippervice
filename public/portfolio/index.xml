@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on Clare Evans</title>
+    <link>https://nippervice.netlify.com/portfolio/</link>
+    <description>Recent content in Portfolio on Clare Evans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jul 2017 14:49:47 +1000</lastBuildDate>
+    
+	<atom:link href="https://nippervice.netlify.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BA Marketing</title>
+      <link>https://nippervice.netlify.com/portfolio/ba_marketing/</link>
+      <pubDate>Mon, 03 Jul 2017 14:49:47 +1000</pubDate>
+      
+      <guid>https://nippervice.netlify.com/portfolio/ba_marketing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blue Horizons Marketing</title>
+      <link>https://nippervice.netlify.com/portfolio/blue_horizons/</link>
+      <pubDate>Mon, 03 Jul 2017 14:49:47 +1000</pubDate>
+      
+      <guid>https://nippervice.netlify.com/portfolio/blue_horizons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Georgina Scott Bridal</title>
+      <link>https://nippervice.netlify.com/portfolio/georgina_scott_bridal/</link>
+      <pubDate>Mon, 03 Jul 2017 14:49:47 +1000</pubDate>
+      
+      <guid>https://nippervice.netlify.com/portfolio/georgina_scott_bridal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

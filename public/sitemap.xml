@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://nippervice.netlify.com/about/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/portfolio/ba_marketing/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/portfolio/blue_horizons/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/portfolio/georgina_scott_bridal/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/portfolio/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/</loc>
+    <lastmod>2017-07-03T14:49:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nippervice.netlify.com/services/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
