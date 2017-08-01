@@ -12,6 +12,16 @@
     padding-bottom: 1.4rem;
     font-size: 1.2rem;
     text-align: center;
+
+    &__link {
+      font-weight: 600;
+      text-decoration: none;
+      color: $brand_pink;
+
+      &:hover {
+        color: darken($brand_pink, 15%);
+      }
+    }
   }
 
 }
