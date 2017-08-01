@@ -18,7 +18,9 @@
     {{ partial "header.html" . }}
 
     <div class="body">
-      WORKING YO!
+      {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
     </div>
 
     <!-- More shared code, perhaps a footer -->
