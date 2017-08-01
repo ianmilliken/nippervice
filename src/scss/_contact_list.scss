@@ -9,6 +9,10 @@
 
   .contact-block {
     text-align: center;
+
+    & > p {
+      line-height: 1.48;
+    }
   }
 
   .contact-list {

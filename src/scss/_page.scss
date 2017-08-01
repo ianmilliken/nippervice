@@ -7,82 +7,79 @@
 
 @include bp-x-small {
 
-  .page-section > h1 {
-    font-size: 2.7rem;
-  }
-
-  .page-section > h1,
-  .page-section > div > h1,
-  .page-section > h2 {
-    font-family: 'Courgette', cursive;
-    margin-top: 3rem;
-    font-weight: 400;
-  }
-
-  .page-section h1 > span,
-  .page-section h2 > span {
-    position: relative;
-    z-index: 0;
-  }
-
-  .page-section h1 > span::before {
-    content: "";
-    position: absolute;
-    left: -15%;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    margin: auto;
-    width: 130%;
-    height: 1.6rem;
-    background: $brand_light_pink;
-  }
-
-  .page-section h2 > span::before {
-    content: "";
-    position: absolute;
-    left: -10%;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 120%;
-    height: 1.2rem;
-    margin: auto;
-    background: $brand_light_pink;
-  }
-
-  h1, h2, h3, h4 {
-    text-align: center;
-  }
-
   .page-section {
     max-width: 76rem;
     margin-left: auto;
     margin-right: auto;
+
+    & > h1 {
+      font-size: 2.7rem;
+    }
+
+    & > h1,
+    & > div > h1,
+    & > h2 {
+      font-family: 'Courgette', cursive;
+      margin-top: 3rem;
+      font-weight: 400;
+    }
+
+    & h1 > span,
+    & h2 > span {
+      position: relative;
+      z-index: 0;
+    }
+
+    & h1 > span::before {
+      content: "";
+      position: absolute;
+      left: -15%;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      margin: auto;
+      width: 130%;
+      height: 1.6rem;
+      background: $brand_light_pink;
+    }
+
+    & h2 > span::before {
+      content: "";
+      position: absolute;
+      left: -10%;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 120%;
+      height: 1.2rem;
+      margin: auto;
+      background: $brand_light_pink;
+    }
+
+    & > p,
+    & > p.page-intro {
+      color: $brand_blue;
+      font-size: 1.5rem;
+      line-height: 1.48;
+      padding-left: 4rem;
+      padding-right: 4rem;
+
+      & > a {
+        color: $brand_green;
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 0.2rem dotted;
+
+        &:hover {
+          color: darken($brand_green, 15%);
+        }
+      }
+    }
+
   }
 
-  .page-section:last-of-type {
-    padding-bottom: 6rem;
-  }
-
-  .page-section > p,
-  .page-section > p.page-intro {
-    color: $brand_blue;
-    font-size: 1.6rem;
-    line-height: 1.48;
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .page-section > p > a {
-    color: $brand_green;
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 0.2rem dotted;
-  }
-
-  .page-section > p > a:hover {
-    color: darken($brand_green, 30%);
+  h1, h2, h3, h4 {
+    text-align: center;
   }
 
   .split-section {
@@ -93,40 +90,35 @@
     width: 100%;
     max-width: 100%;
     padding-bottom: 0 !important;
-  }
 
-  .split-section__piece {
-    width: 100%;
-    overflow: hidden;
+    &__piece {
+      width: 100%;
+      overflow: hidden;
 
-    // MAY NEED MOVING TO COMMON
-    & > h1:first-child {
-      margin-top: 0;
+      &--banner {
+        height: 26rem;
+
+        & > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 50% 20%;
+        }
+      }
+
+      & > h1,
+      & > p,
+      & > div {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      & > p {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        text-align: center;
+      }
     }
-  }
-
-  .split-section__piece--banner {
-    height: 26rem;
-  }
-
-  .split-section__piece--banner > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 20%;
-  }
-
-  .split-section__piece > h1,
-  .split-section__piece > p,
-  .split-section__piece > div {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .split-section__piece > p {
-    font-size: 1.5rem;
-    line-height: 2.7rem;
-    text-align: center;
   }
 
 }
@@ -147,45 +139,57 @@
 
 @include bp-medium {
 
-  .page-section > h1 {
-    font-size: 3.2rem;
-  }
+  .page-section {
 
-  .page-section > h1,
-  .page-section > div > h1,
-  .page-section > h2 {
-    margin-top: 6rem;
-  }
+    &:last-of-type {
+      padding-bottom: 6rem;
+    }
 
-  .page-section h1 > span::before {
-    left: -20%;
-    width: 140%;
-    height: 1.8rem;
-  }
+    & > h1 {
+      font-size: 3.2rem;
+    }
 
-  .page-section > p,
-  .page-section > p.page-intro {
-    max-width: 100%;
-    font-size: 1.9rem;
-    line-height: 1.6;
-    text-align: center;
+    & > h1,
+    & > div > h1,
+    & > h2 {
+      margin-top: 6rem;
+    }
+
+    & h1 > span::before {
+      left: -20%;
+      width: 140%;
+      height: 1.8rem;
+    }
+
+    & > p,
+    & > p.page-intro {
+      max-width: 100%;
+      font-size: 1.9rem;
+      line-height: 1.6;
+      text-align: center;
+    }
   }
 
   .split-section__piece {
     width: 50%;
-  }
 
-  .split-section__piece--banner {
-    height: 58rem;
-  }
+    &--banner {
+      height: 58rem;
 
-  .split-section__piece--banner > img {
-    object-position: 50% 0%;
-  }
+      & > img {
+        object-position: 50% 0%;
+      }
+    }
 
-  .split-section__piece > p {
-    font-size: 1.7rem;
-    line-height: 1.6;
+    & > p {
+      font-size: 1.7rem;
+      line-height: 1.6;
+    }
+
+    // MAY NEED MOVING TO COMMON
+    & > h1:first-child {
+      margin-top: 0;
+    }
   }
 
 }
