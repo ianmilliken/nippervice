@@ -86,3 +86,6 @@ gulp.task("watch", ["scss", "images", "js"], function () {
 
 // Set watch as default task
 gulp.task("default", ["bower", "icons", "watch"])
+
+// Build task
+gulp.task("build", ["bower", "icons", "scss", "images", "js"]);
