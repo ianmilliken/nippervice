@@ -15,6 +15,4 @@ links:
   - type : "Referral"
     title: "What You Didn’t Know About Finding a Wedding Dress"
     url: "https://medium.com/@GeorginaScottBridal/what-you-didnt-know-about-finding-a-wedding-dress-b4fd46c85bfc"
-
-skills: [ DM, CM, PR, SM, MR ]
 ---
