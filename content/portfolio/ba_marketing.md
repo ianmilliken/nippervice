@@ -20,7 +20,7 @@ links:
 
   - type : "Ebook"
     title: "The Small Business SEO Toolkit"
-    url: "https://drive.google.com/drive/search?q=ebook"
+    url: "https://drive.google.com/file/d/0B6q6cJ2H8E18bUtQMi1uNWFSVEE/view"
 
 skills: [ DM, CM, SM ]
 ---
