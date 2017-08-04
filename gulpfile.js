@@ -12,7 +12,9 @@ var gulp         = require("gulp"),
          SASS_DIR: './src/scss',
         JS_DIR: './src/js',
         IMAGE_DIR: './src/images',
-         BOWER_DIR: './bower_components' 
+         BOWER_DIR: './bower_components' ,
+        HTML_DIR: './',
+        DIST: './public'
     }
 
 // Run Bower Install
@@ -86,6 +88,3 @@ gulp.task("watch", ["scss", "images", "js"], function () {
 
 // Set watch as default task
 gulp.task("default", ["bower", "icons", "watch"])
-
-// Build task
-gulp.task("build", ["bower", "icons", "scss", "images", "js"]);

@@ -5,6 +5,14 @@
 		<div class="portfolio-image">
 			{{ partial "components/ba_marketing_logo.svg" . }}
 		</div>
+		{{ else if eq . "BH" }}
+		<div class="portfolio-image">
+			<img src="/images/{{ index $.Site.Data.images.hash "blue-horizon.png" }}" alt="Blue Horizon" />
+		</div>
+		{{ else if eq . "GS" }}
+		<div class="portfolio-image">
+			<img src="/images/{{ index $.Site.Data.images.hash "georgina.png" }}" alt="Georgina Scott Bridal" />
+		</div>
 		{{ else }}
 		<div style="margin-top: 3rem"></div>
 		{{ end }}

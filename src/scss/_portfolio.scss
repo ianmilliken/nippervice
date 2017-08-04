@@ -76,9 +76,11 @@
 
   .portfolio-image {
     position: relative;
+    height: 8.6rem; //@HACK height fix for png images
     margin-bottom: -3rem; // pull content up to make up for child transform
 
-    & > svg {
+    & > svg,
+    & > img {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -128,7 +130,7 @@
       font-size: 1.3rem;
       font-weight: 600;
 
-      &> img {
+      & > img {
         margin-right: 0.6rem;
       }
     }
