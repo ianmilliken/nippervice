@@ -1,0 +1,12 @@
+---
+baseURL: "/"
+languageCode: "en-us"
+title: "Clare Evans"
+
+menu:
+  main:
+    - Name: "About"
+      URL: "/about/"
+    - Name: "Portfolio"
+      URL: "/portfolio/"
+---

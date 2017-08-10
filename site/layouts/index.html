@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+{{ $baseURL := .Site.BaseURL }}
+
+<section class="page-section split-section">
+  <div class="split-section__piece split-section__piece--banner">
+    <img src="/images/clare-evans-home.jpg" alt="{{ .Title }}" />
+  </div>
+  <div class="split-section__piece">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}

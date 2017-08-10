@@ -1,0 +1,36 @@
+<ul class="skill-list">
+  {{ range .Params.skills }}
+  <li class="skill-item">
+
+    {{ if eq . "DM" }}
+    {{ partial "components/digital_marketing.svg" . }}
+    <div class="skill-item__title">Digital marketing strategy</div>
+
+    {{ else if eq . "CM" }}
+    {{ partial "components/content_marketing.svg" . }}
+    <div class="skill-item__title">Content marketing</div>
+
+    {{ else if eq . "SM" }}
+    {{ partial "components/social_media_marketing.svg" . }}
+    <div class="skill-item__title">Social media marketing</div>
+
+    {{ else if eq . "MR" }}
+    {{ partial "components/marketing_reports.svg" . }}
+    <div class="skill-item__title">Marketing reports</div>
+
+    {{ else if eq . "GW" }}
+    {{ partial "components/ghost_writing.svg" . }}
+    <div class="skill-item__title">Ghost writing</div>
+
+    {{ else if eq . "PR" }}
+    {{ partial "components/pr_promotional.svg" . }}
+    <div class="skill-item__title">PR and promotional campaigns</div>
+
+    {{ else if eq . "PA" }}
+    {{ partial "components/paid_advertising.svg" . }}
+    <div class="skill-item__title">Paid advertising</div>
+    
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
