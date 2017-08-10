@@ -12,7 +12,7 @@
         {{ $currentNode := . }}
         {{ range .Site.Menus.main }}
         <li class="site-nav__item">
-          <a class="site-nav__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}site-nav__link--active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="axios-nav-link site-nav__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}site-nav__link--active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{ end }}
         <li class="site-nav__item site-nav__item--pipe">

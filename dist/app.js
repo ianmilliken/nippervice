@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,14 +73,18 @@
 "use strict";
 
 
-/*
- *
- *  Manifest "app.js"
- *  author: ianmilliken
- *
- */
+var _test = __webpack_require__(1);
+
+var _test2 = _interopRequireDefault(_test);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $(document).ready(function () {
+
+  $('.axios-nav-link').click(function (e) {
+    e.preventDefault();
+    alert("Axios link clicked!");
+  });
 
   //  -----------------------------
   //  Hamburger and drawer
@@ -116,10 +120,27 @@ $(document).ready(function () {
     event.preventDefault();
     remove_classes();
   });
-});
+}); /*
+     *
+     *  Manifest "app.js"
+     *  author: ianmilliken
+     *
+     */
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var foo = exports.foo = "THIS IS FOO";
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);

@@ -61,10 +61,6 @@ gulp.task("js", (cb) => {
       progress: true
     }));
     browserSync.reload();
-
-    gulp.src("./src/js/*.js")
-      .pipe(gulp.dest("./dist/js"));
-
     cb();
   });
 });

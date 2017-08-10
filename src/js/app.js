@@ -5,7 +5,14 @@
  *
  */
 
- $(document).ready(function() {
+import foo from "./test";
+
+$(document).ready(function() {
+
+   $('.axios-nav-link').click( e => {
+      e.preventDefault()
+      alert("Axios link clicked!")
+   });
 
    //  -----------------------------
    //  Hamburger and drawer
@@ -42,4 +49,4 @@
      remove_classes();
    });
 
- });
+});
