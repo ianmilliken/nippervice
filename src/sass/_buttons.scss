@@ -31,6 +31,19 @@
       width: 100%;
       top: 1.5rem;
     }
+
+    & > svg {
+      fill: $brand_light_green;
+    }
+
+    &:hover {
+      animation-name: bounce;
+      transform-origin: center bottom;
+
+      & > svg {
+        fill: $brand_green;
+      }
+    }
   }
 
 }
